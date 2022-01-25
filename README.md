@@ -10,7 +10,7 @@ https://github.com/AtaiSamak/ToDoList.git
 cd .\ToDoList\
 npm install
 ```
-Downloads a package and it's dependencies
+Downloads a package and it's dependencies.
 
 #### 3. Start
 ```
