@@ -1,7 +1,7 @@
 # Installation & Usage
 
 #### 1. Download/Clone this repo
-  ```
+```
 https://github.com/AtaiSamak/ToDoList.git
 ```
 
