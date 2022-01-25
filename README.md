@@ -4,8 +4,10 @@
 ### `https://github.com/AtaiSamak/ToDoList.git`
 
 2. `cd` into the root directory and run `npm install`
-### `cd .\ToDoList\`
-### `npm install`
+```
+`cd .\ToDoList\`
+`npm install`
+```
 
 3. Start
 ### `npm start`
