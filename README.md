@@ -1,17 +1,17 @@
 # Installation & Usage
 
-### 1. Download/Clone this repo
+#### 1. Download/Clone this repo
 ```
 https://github.com/AtaiSamak/ToDoList.git
 ```
 
-### 2. `cd` into the root directory and run `npm install`
+#### 2. `cd` into the root directory and run `npm install`
 ```
 cd .\ToDoList\
 npm install
 ```
 
-### 3. Start
+#### 3. Start
 ```
 npm start
 ```
