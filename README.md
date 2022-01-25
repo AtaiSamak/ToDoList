@@ -5,7 +5,7 @@
 
 2. `cd` into the root directory and run `npm install`
 ### `cd .\ToDoList\`
-### `npm install'
+### `npm install`
 
 3. Start
 ### `npm start`
