@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-import styled from "styled-components";
 import PostTaskItem from "../postTaskItem";
-
-const StyledPostTask = styled.div`
-    margin-top: 20px;
-`;
+import { ListGroup } from "react-bootstrap";
 
 export default class PostTask extends Component {
     render() {
@@ -13,18 +9,23 @@ export default class PostTask extends Component {
             const {id, label} = task;
 
             return (
-                <li key={id} style={{listStyleType: 'none'}}>
+                <ListGroup.Item
+                    as="li" 
+                    className="d-flex justify-content-between text-wrap
+                    align-items-center mt-2 rounded-2 border"
+                    key={id}
+                    style={{listStyleType: 'none'}}>
                     <PostTaskItem
                         label={label}
                         handleClick={() => onDelete(id)}/>
-                </li>
+                </ListGroup.Item>
             )
         });
 
         return (
-            <StyledPostTask>
+            <ListGroup as="ol">
                 {elements}
-            </StyledPostTask>
+            </ListGroup>
         )
     }
 }

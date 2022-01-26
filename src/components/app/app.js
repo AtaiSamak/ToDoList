@@ -1,14 +1,8 @@
 import React, { Component } from "react";
-import styled from "styled-components";
 import ErrorWindow from "../errorWindow";
 import PostAddForm from "../postAddForm";
 import PostTask from "../postTask";
-
-const StyledApp = styled.div`
-    max-width: 756px;
-    width: 100%;
-    margin: 0 auto;
-`; 
+import { Container, Row } from "react-bootstrap";
 
 export default class App extends Component {
     constructor(props) {
@@ -21,7 +15,6 @@ export default class App extends Component {
         this.currentIndex = 1;
     }
     
-
     addTask = (body) => {
         if(!body) {
             return
@@ -70,12 +63,16 @@ export default class App extends Component {
         }
 
         return (
-            <StyledApp>
-                <PostAddForm onAdd={this.addTask}/>
-                <PostTask
-                    tasks={this.state.data}
-                    onDelete={this.deleteTask}/>
-            </StyledApp>
+            <Container style={{maxWidth: '756px'}}>
+                <Row>
+                    <PostAddForm onAdd={this.addTask}/>
+                </Row>
+                <Row style={{paddingLeft: '12px'}}>
+                    <PostTask
+                        tasks={this.state.data}
+                        onDelete={this.deleteTask}/>
+                </Row>
+            </Container>
         )
     }
 }
