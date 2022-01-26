@@ -2,7 +2,7 @@
 
 #### 1. Download/Clone this repo
 ```
-https://github.com/AtaiSamak/ToDoList.git
+git clone https://github.com/AtaiSamak/ToDoList.git
 ```
 
 #### 2. `cd` into the root directory and run `npm install`
